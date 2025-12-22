@@ -1,5 +1,28 @@
 /* about-set style */
+.about-section {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 40px 24px;
+
+  @media (width >= 850px) {
+    flex-direction: row;
+    padding: 32px 56px;
+  }
+
+  @media (width >= 1680px) {
+    width: 1280px;
+    margin-inline: auto;
+    padding: 64px;
+  }
+}
 .about-wrap {
+  flex: 1;
+
+  .about-img-box {
+    padding-block: 3px;
+    padding-inline: 5px;
+  }
   .about-item {
     padding-block: 12px;
 
