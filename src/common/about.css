@@ -39,7 +39,9 @@
   .about-button {
     position: relative;
     text-decoration: none;
+    font-weight: var(--label-weight);
     font-size: var(--label-M);
+    padding: 4px;
     &:focus-visible {
       outline-color: var(--accent);
     }
