@@ -1,0 +1,78 @@
+/* banner style */
+.banner-section {
+  width: 100%;
+  max-height: 256px;
+  aspect-ratio: 1/0.5;
+  background-image: url('../images/UberTaxi_small.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  @media (width >= 850px) {
+    max-height: 359px;
+    background-image: url('../images/UberTaxi_tablet.svg');
+
+    .banner-wrap {
+      padding: 56px 32px;
+      min-height: 359px;
+      .banner-title {
+        font-size: var(--h-XXL);
+      }
+    }
+  }
+
+  @media (width >= 1680px) {
+    max-height: 399px;
+    padding: 0;
+    background-image: url('../images/UberTaxi.svg');
+
+    .banner-wrap {
+      padding-block-start: 64px;
+      margin-inline: auto;
+      width: 1280px;
+    }
+  }
+}
+
+.banner-wrap {
+  padding: 40px 24px;
+  width: 100%;
+
+  .banner-title {
+    font-weight: var(--heading-weight);
+    font-size: var(--h-XL);
+    color: var(--primary);
+  }
+
+  .banner-description {
+    margin-block-start: 28px;
+    font-size: var(--label-M);
+    color: var(--primary);
+    font-weight: var(--label-weight);
+  }
+
+  .banner-button {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    margin-block-start: 28px;
+    font-size: var(--label-M);
+    font-weight: var(--label-weight);
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: none;
+
+    &:focus-visible {
+      outline: 1px solid var(--accent);
+    }
+
+    img {
+      padding: 4px;
+      margin-inline-end: 4px;
+    }
+
+    &:disabled {
+      background-color: var(--content-secondary);
+    }
+  }
+}
