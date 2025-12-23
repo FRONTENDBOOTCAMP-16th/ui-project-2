@@ -74,15 +74,17 @@
     .sub-nav-wrap {
       position: absolute;
       display: block;
-      top: 34px;
-      left: 0;
-      width: 100%;
+      margin-top: 19px;
+      left: 50%;
+      translate: -50% 0;
 
       .sub-nav-item {
         background-color: var(--primary);
         padding-block: 10px;
         text-align: center;
 
+        padding: 10px 15px;
+        white-space: nowrap;
         a {
           text-decoration: none;
         }
@@ -126,6 +128,9 @@
   background-color: var(--secondary);
   color: var(--primary);
   margin-left: 12px;
+  &:focus-visible {
+    outline-color: var(--accent);
+  }
 
   :visited {
     color: inherit;
