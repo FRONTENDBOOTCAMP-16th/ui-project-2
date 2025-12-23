@@ -7,4 +7,5 @@
 
 /* 레이아웃 스타일 */
 @import './about.css';
+@import './banner.css';
 @import './nav.css';
