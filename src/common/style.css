@@ -1,1 +1,52 @@
 /* CSS 스타일을 작성해 주세요. */
+
+footer {
+  position: relative;
+  display: flex;
+  flex-flow: nowrap column;
+  background: var(--primary);
+  padding: 2.5rem 1.5rem;
+
+  a {
+    text-decoration: none;
+    color: var(--secondary);
+  }
+
+  .logo-area {
+    display: flex;
+    flex-flow: nowrap column;
+
+    svg {
+      inline-size: 40px;
+      block-size: 20px;
+      margin-block-end: 1.75rem;
+      margin: 0;
+    }
+    .customer-service {
+      font-size: 1rem;
+      padding-block-start: 1.75rem;
+    }
+  }
+
+  .footer-menu {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: space-between;
+    padding-block-start: 4rem;
+
+    .footer-menu-list {
+      font-size: 1.25rem;
+      font-weight: var(--p-weight);
+      color: var(--secondary);
+
+      li {
+        font-size: 1rem;
+        font-weight: 600;
+        padding-block-start: 1.25rem;
+      }
+    }
+  }
+
+  .footer-url {
+  }
+}
